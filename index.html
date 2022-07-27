@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="title">
+        <h1 class="title__content">To Do List</h1>
+    </div>
+    <div class="bigBox">
+        <div class="smallBox">
+            <div class="add">
+                <h2 id ="add__title">Please add detail of your task </h2>
+                <br>
+                <br>
+                    <input type="text" id="newnote" placeholder="Add tasks here" value="What are you going to do today?">
+                    <!-- <input type="datetime" id="newnotedate" name ="newnotedate" placeholder="Add date here">
+                    <input type="number" id = "prioritynum" name ="prioritynum" placeholder="Add priority ranking"> -->
+                    <button onclick="submitEvent()">Submit</button>
+            </div>
+        </div>
+        <div class="smallBox">
+            <div class="current">
+                <h2 id="current__title">To-do List</h2>
+                <div id="current-tasks" class="tasks">
+                    <ul id = myList>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="smallBox">
+            <div class="completed">
+                <h2 id="completed__title">Completed Tasks</h2>
+                <div id="completed-tasks" class="tasks">
+                    <ul id = myList2>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
